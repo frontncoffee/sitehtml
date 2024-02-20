@@ -1,0 +1,249 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+:root {
+    --primary-color: #66b3e3;
+    --secundary-color: #8e8e8e;
+    --bckcolor-color: #1e1f1f;
+    --darkbck-color: #404040;
+    --txt-color: #333;
+}
+
+.logo {
+    font-family: "Yanone Kaffeesatz", sans-serif;
+    font-size: 2em;
+}
+
+.logo span {
+    color: var(--primary-color);
+}
+
+section {
+    padding: 60px 0;
+}
+
+.section-intro {
+    text-align: center;
+}
+
+.section-intro h2 {
+    font-family: "Yanone Kaffeesatz", sans-serif;
+    font-size: 4em;
+}
+
+.section-intro hr {
+    width: 150px;
+    height: 6px;
+    background-color: var(--primary-color);
+    opacity: 1;
+    border-top: inherit;
+    margin: 20px auto;
+}
+
+.section-intro p {
+    font-size: 1.5em;
+    margin: 30px 0;
+}
+
+.section-dark {
+    background-color: rgba(0,0,0,.1);
+}
+
+.recomendados ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.recomendados ul li {
+    text-align: center;
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+.recomendados ul li a {
+    text-decoration: none;
+    font-family: "Yanone Kaffeesatz", sans-serif;
+    color: var(--txt-color);
+    font-size: 1.3em;
+}
+
+.recomendados ul li a img {
+    border-radius: 50%;
+    width: auto;
+    height: 100px;
+}
+
+.recomendados ul li a p {
+    margin: 10px 0;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 5px 20px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    font-size: 3em;
+}
+
+footer ul li a svg {
+    color: #fff;
+}
+
+#upbtn {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+    font-size: 4em;
+    transition: .2s;
+}
+
+#upbtn svg {
+    color: #575757;
+}
+
+/* Bootstrap */
+.navbar {
+    border-radius: 20px;
+    margin-top: 20px;
+    box-shadow: 1px 1px 13px 0px rgba(0, 0, 0, 0.4);
+}
+
+.navbar ul li {
+    font-size: 1.3em;
+}
+
+.carousel {
+    margin: 30px 0;
+    padding: 0;
+    box-shadow: 1px 1px 13px 0px rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+}
+
+.carousel img,
+.carousel-item,
+.carousel-inner {
+    border-radius: 20px;
+}
+
+.carousel-caption {
+    bottom: inherit;
+    top: 30px;
+    text-align: left;
+    right: 10%;
+    left: 10%;
+    font-size: 1.2em;
+    z-index: 10;
+}
+
+.carousel-caption .logo {
+    font-size: 3em;
+}
+
+.carousel-caption h5 {
+    margin: 0;
+}
+
+.carousel-caption p {
+    font-size: 1.7em;
+    margin: 0;
+}
+
+.carousel-indicators button {
+    background-color: #000 !important;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.card, .card img {
+    border-radius: 20px;
+    transition: .2s;
+}
+
+.card:hover {
+    box-shadow: 1px 1px 13px 0px rgba(0, 0, 0, 0.4);
+    transition: .2s;
+}
+
+
+/* smartphone */
+@media(max-width:640px) {
+    body {
+        padding: 0 15px;
+    }
+
+    .carousel-caption {
+        top: 10px;
+        font-size: .9em;
+        right: 12%;
+        left: 12%;
+    }
+
+    .carousel-caption p {
+        font-size: 1.5em;
+    }
+
+    .carousel-caption p a {
+        margin-top: 10px;
+    }
+
+    .carousel-indicators button {
+        background-color: #fff !important;
+    }
+
+    .recomendados ul li a {
+        font-size: 1em;
+    }
+
+    section, footer {
+        border-radius: 20px;
+    }
+
+    ul.navbar-nav {
+        padding-left: 20px;
+    }
+
+
+}
+
+@media(prefers-color-scheme: dark) {
+    body {
+        background-color: var(--darkbck-color);
+    }
+
+    .section-intro h2, .section-intro p {
+        color: #fff;
+    }
+
+    .recomendados ul li a {
+        color: #fff;
+    }
+
+    /* bootstrap */
+    .navbar, .card {
+        background-color: rgba(255,255,255,.8) !important;
+    }
+}

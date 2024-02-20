@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front´nCoffee</title>
+    <link rel="icon" type="image/png" href="favicon.png" sizes="200x200">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Yanone+Kaffeesatz:wght@200..700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                    <div class="container-fluid">
+                        <a class="navbar-brand logo" href="index.html"><span>&lt;</span>Front´nCoffee<span>/&gt;</span></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#videos" onclick="scrollToSection('videos')">Videos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#inscrevase" onclick="scrollToSection('inscrevase')">Inscreva-se</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#canaisdev" onclick="scrollToSection('canaisdev')">Canais Recomendados</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="https://www.youtube.com/@FrontNCoffee" target="_blank"><i
+                                            class="fa-brands fa-youtube"></i> Canal</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="https://github.com/frontncoffee" target="_blank"><i class="fa-brands fa-github-alt"></i> Git</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="row">
+                <div id="carouselDestaquesHome" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselDestaquesHome" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselDestaquesHome" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imgs/destaque-1.jpg" class="d-block w-100 d-none d-sm-block"
+                                alt="Desenvolvendo com ChatGPT">
+                            <img src="imgs/destaque-1-mob.jpg" class="d-block w-100 d-sm-none"
+                                alt="Desenvolvendo com ChatGPT">
+                            <div class="col-9 col-md-5 carousel-caption d-md-block">
+                                <h5 class="logo"><span>&lt;</span>Front´nCoffee<span>/&gt;</span></h5>
+                                <p>Desenvolvendo com ChatGPT</p>
+                                <small>Aqui vamos ver como é desenvolver usando o ChatGPT pra criar pra gente código
+                                    HTML, CSS e Javascript, facilitando o nosso trabalho.</small>
+                                <p><a class="btn btn-secondary" href="https://youtu.be/nqUunlpwgKQ?si=C5gsOr41kcjbd-O8"
+                                        target="_blank">Veja <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imgs/destaque-2.jpg" class="d-block w-100 d-none d-sm-block"
+                                alt="Como usar o Font Awesome">
+                            <img src="imgs/destaque-2-mob.jpg" class="d-block w-100 d-sm-none"
+                                alt="Como usar o Font Awesome">
+                            <div class="col-9 col-md-5 carousel-caption d-md-block">
+                                <h5 class="logo"><span>&lt;</span>Front´nCoffee<span>/&gt;</span></h5>
+                                <p>Como usar o Font Awesome</p>
+                                <small>Neste video você vai aprender como utilizar a biblioteca de ícones em fonte
+                                    mais popular da internet, a Font Awesome.</small>
+                                <p><a class="btn btn-secondary" href="https://youtu.be/vYd5d5cdrPQ?si=AQlTp8l0pa4Esj8a"
+                                        target="_blank">Veja <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselDestaquesHome"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselDestaquesHome"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Próxima</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="videos" class="section-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 section-intro">
+                    <h2>Vídeos Novos</h2>
+                    <hr>
+                    <p>Acompanhe os videos mais recentes do canal. Aproveite e deixe o seu like no video.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-3">
+                    <div class="card">
+                        <img src="https://i.ytimg.com/vi/AMeLQuaYa8o/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDzD3r8ZW09LBRSJUDvDAe565yF6A" class="card-img-top" alt="Emmet no VSCode">
+                        <div class="card-body">
+                            <p class="card-text">Vamos conhecer o Emmet e como ele pode nos ajudar a ser mais produtivo!</p>
+                            <a href="https://youtu.be/AMeLQuaYa8o?si=lD6DcJys7JYnmp-8" target="_blank" class="btn btn-dark">Abrir Video <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-3">
+                    <div class="card">
+                        <img src="https://i.ytimg.com/vi/S_PA1wYDR44/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB20F2aBc4AIh9oGcBPai4YqrHU8A" class="card-img-top" alt="Bootstrap e suas grids">
+                        <div class="card-body">
+                            <p class="card-text">Vamos falar um pouco sobre Bootstrap e como funciona o seu sistema de
+                                Grid.</p>
+                            <a href="https://youtu.be/S_PA1wYDR44?si=kVVuG1bPYqYtX8zk" target="_blank" class="btn btn-dark">Abrir Video <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-3">
+                    <div class="card">
+                        <img src="https://i.ytimg.com/vi/NppBLSeiYGo/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDDVnM3puzB8tKd7MDE4GmyiGRPWQ" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <p class="card-text">Aprenda a utilizar o Google Fonts em seus projetos de maneira bem
+                                simples.</p>
+                            <a href="https://youtu.be/NppBLSeiYGo?si=HJEMqazdKL81gZ5Y" target="_blank" class="btn btn-dark">Abrir Video <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-3">
+                    <div class="card">
+                        <img src="https://i.ytimg.com/vi/1jcGNVf5_7A/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCZQ7C9A2bWMo-eJX6LZo3Q9Wipvg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <p class="card-text">Não podia deixar de iniciar sem um clássico Olá Mundo!</p>
+                            <a href="https://youtu.be/1jcGNVf5_7A?si=Ew47SPZXdQ2YG-Cc" target="_blank" class="btn btn-dark">Abrir Video <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="inscrevase">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 section-intro">
+                    <h2><i class="fa-brands fa-youtube"></i> Inscreva-se!</h2>
+                    <hr>
+                    <p>Dê essa força pra gente! É grátis e você ainda ganha conhecimento! Clica ai... 😊</p>
+                    <p><a class="btn btn-danger btn-lg" href="https://www.youtube.com/channel/UCgPEGFPJOey5X0LKHJuxcxQ" target="_blank"><i class="fa-brands fa-youtube"></i> Inscreva-se</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="canaisdev" class="section-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 section-intro">
+                    <h2>Canais DEV Recomendados</h2>
+                    <hr>
+                    <p>Confira alguns canais Dev que eu recomendo você acompanhar.</p>
+                </div>
+                <div class="col-12 recomendados">
+                    <ul>
+                        <li>
+                            <a href="https://www.youtube.com/@CursoemVideo" target="_blank">
+                                <img src="https://yt3.googleusercontent.com/ytc/AIf8zZRYHOFJ7HTJ1lBhlBVZUIi1Exp7Y-ajfHlyNoIR_w=s176-c-k-c0x00ffffff-no-rj" alt="CursoemVideo">
+                                <p>@CursoemVideo</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/@cod3r" target="_blank">
+                                <img src="https://yt3.googleusercontent.com/ytc/AIf8zZQmxnZ-91CAqgocLdz7e_reRBrYxpUrya0r6GWz=s176-c-k-c0x00ffffff-no-rj" alt="cod3r">
+                                <p>@cod3r</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/@codigofontetv" target="_blank">
+                                <img src="https://yt3.googleusercontent.com/jKYyKomWrcwv0hgbPr8Jof6ZH8nP4EfrbRt4iWbseLwITGo2r8Rj2ksxv7WYy7Y4yBcFst2MVn8=s176-c-k-c0x00ffffff-no-rj" alt="codigofontetv">
+                                <p>@codigofontetv</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/@rocketseat" target="_blank">
+                                <img src="https://yt3.googleusercontent.com/6m9Q-yad3FXuGLlAkfcWmkaThNPwT2TGRyfpELFzFZb5BqBYwo_XV_ia_c-k6m6JwAx7m_4B=s176-c-k-c0x00ffffff-no-rj" alt="rocketseat">
+                                <p>@rocketseat</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/@filipedeschamps" target="_blank">
+                                <img src="https://yt3.googleusercontent.com/ytc/AIf8zZQqWLIMgm0a79oUAVIz3mRxAkdH-0F_1oMqhDEI=s176-c-k-c0x00ffffff-no-rj" alt="filipedeschamps">
+                                <p>@filipedeschamps</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/@kipperdev" target="_blank">
+                                <img src="https://yt3.googleusercontent.com/fXYbWD5PCNPNraxKgCY5B62bziTdpMOrs6K56POhERKeWEMybVgRaN093a_VoN6nMLo2YTsduw=s176-c-k-c0x00ffffff-no-rj" alt="kipperdev">
+                                <p>@kipperdev</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/@manodeyvin" target="_blank">
+                                <img src="https://yt3.googleusercontent.com/sqd29Za-ALVl9Dv7E01Jo54jDwnsp89zU8D80exJL6-T6qdQkchWazkVpOlyt47b4fZ0mpXp8A=s176-c-k-c0x00ffffff-no-rj" alt="manodeyvin">
+                                <p>@manodeyvin</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/@JovemTranquilao" target="_blank">
+                                <img src="https://yt3.googleusercontent.com/ytc/AIf8zZT6agbQPKoQdKNkLNXnKGHa6LYYXm6CzJYpkhAzaPI=s176-c-k-c0x00ffffff-no-rj" alt="JovemTranquilao">
+                                <p>@JovemTranquilao</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 section-intro">
+                    <h2>Acompanhe a gente no Git <i class="fa-brands fa-github"></i></h2>
+                    <hr>
+                    <p>Todo video que você assiste tem seu código disponível no nosso Git. Segue lá!</p>
+                    <p><a class="btn btn-dark btn-lg" href="https://github.com/frontncoffee" target="_blank"><i class="fa-brands fa-github-alt"></i> Seguir</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1>Front´nCoffee</h1>
+                    <ul>
+                        <li>
+                            <a href="https://www.youtube.com/@FrontNCoffee" target="_blank"><i
+                                class="fa-brands fa-youtube"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/frontncoffee" target="_blank"><i class="fa-brands fa-github-alt"></i></a>
+                        </li>
+                    </ul>
+                    <p>Front´nCoffee por Celso Martins <i class="fa-brands fa-creative-commons"></i> <span id="anoatual"></span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="upbtn">
+        <i class="fa-solid fa-circle-up"></i>
+    </div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"
+        integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
